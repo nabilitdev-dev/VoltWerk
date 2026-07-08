@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stilisierte Pendelleuchten mit Lichtkegeln">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102A4E"/>
+      <stop offset="1" stop-color="#0A1B33"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.05)"/>
+    </pattern>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD60A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFD60A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <!-- Decke -->
+  <path d="M100 90 H700" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+  <!-- Pendel 1 -->
+  <path d="M240 90 V200" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <path d="M205 250 a35 35 0 0 1 70 0 z" fill="#0A1B33" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
+  <circle cx="240" cy="262" r="8" fill="rgba(255,255,255,0.4)"/>
+  <path d="M205 252 L150 520 H330 L275 252 Z" fill="url(#cone)"/>
+  <!-- Pendel 2 (aktiv) -->
+  <path d="M400 90 V260" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <path d="M365 310 a35 35 0 0 1 70 0 z" fill="#0A1B33" stroke="#FFD60A" stroke-width="2.5"/>
+  <circle cx="400" cy="322" r="9" fill="#FFD60A"/>
+  <path d="M365 312 L310 560 H490 L435 312 Z" fill="url(#cone)"/>
+  <!-- Pendel 3 -->
+  <path d="M560 90 V180" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <path d="M525 230 a35 35 0 0 1 70 0 z" fill="#0A1B33" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
+  <circle cx="560" cy="242" r="8" fill="rgba(255,255,255,0.4)"/>
+  <path d="M525 232 L470 500 H650 L595 232 Z" fill="url(#cone)"/>
+  <text x="100" y="570" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.45)" letter-spacing="3">2700 K · CRI &gt; 90</text>
+</svg>

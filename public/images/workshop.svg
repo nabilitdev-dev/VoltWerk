@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stilisierte Werkstatt mit Werkzeugwand und Schaltplan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102A4E"/>
+      <stop offset="1" stop-color="#0A1B33"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.05)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <!-- Werkzeugwand -->
+  <rect x="120" y="100" width="320" height="220" rx="10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+  <!-- Schraubendreher -->
+  <path d="M170 140 v70" stroke="rgba(255,255,255,0.5)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M170 210 v40" stroke="#FFD60A" stroke-width="8" stroke-linecap="round"/>
+  <!-- Zange -->
+  <path d="M240 150 c-12 30 -12 50 0 80 M262 150 c12 30 12 50 0 80" stroke="rgba(255,255,255,0.5)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="251" cy="190" r="6" fill="#FFD60A"/>
+  <!-- Spannungsprüfer -->
+  <path d="M330 145 v60" stroke="rgba(255,255,255,0.5)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M330 205 v45" stroke="rgba(255,255,255,0.35)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Kabelrolle -->
+  <circle cx="395" cy="200" r="32" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+  <circle cx="395" cy="200" r="10" fill="rgba(255,255,255,0.3)"/>
+  <path d="M395 232 q40 30 90 20" stroke="#FFD60A" stroke-width="3" fill="none"/>
+  <!-- Schaltplan an der Wand -->
+  <rect x="490" y="100" width="190" height="140" rx="8" fill="#0A1B33" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+  <g stroke="#FFD60A" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M510 200 h40 v-60 h50 v30 h60"/>
+    <circle cx="550" cy="140" r="4"/>
+    <circle cx="660" cy="170" r="4"/>
+  </g>
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none">
+    <path d="M510 130 h30"/>
+    <path d="M600 210 h60"/>
+  </g>
+  <!-- Werkbank -->
+  <path d="M80 400 H720" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+  <path d="M130 400 V560 M670 400 V560" stroke="rgba(255,255,255,0.35)" stroke-width="4"/>
+  <!-- Multimeter auf der Bank -->
+  <rect x="280" y="330" width="90" height="70" rx="8" fill="#0A1B33" stroke="rgba(255,255,255,0.45)" stroke-width="2.5"/>
+  <rect x="295" y="345" width="60" height="22" rx="4" fill="#FFD60A"/>
+  <circle cx="325" cy="385" r="9" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <!-- Helm -->
+  <path d="M470 400 a45 45 0 0 1 90 0 z" fill="#FFD60A"/>
+  <path d="M460 400 h110" stroke="#FFD60A" stroke-width="6" stroke-linecap="round"/>
+  <text x="120" y="520" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.45)" letter-spacing="3">WERKSTATT · MÜNCHEN</text>
+</svg>

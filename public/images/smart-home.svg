@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stilisiertes vernetztes Smart Home">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102A4E"/>
+      <stop offset="1" stop-color="#0A1B33"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.05)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <!-- Haus -->
+  <path d="M220 300 400 150 580 300 V520 H220 Z" fill="#0A1B33" stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+  <path d="M190 320 400 140 610 320" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Räume / Knoten -->
+  <g stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none">
+    <path d="M400 520 V330"/>
+    <path d="M220 420 H580"/>
+  </g>
+  <g>
+    <circle cx="310" cy="375" r="8" fill="#FFD60A"/>
+    <circle cx="490" cy="375" r="8" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="310" cy="470" r="8" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="490" cy="470" r="8" fill="#FFD60A"/>
+    <circle cx="400" cy="290" r="10" fill="none" stroke="#FFD60A" stroke-width="2.5"/>
+    <circle cx="400" cy="290" r="3.5" fill="#FFD60A"/>
+  </g>
+  <!-- Verbindungen zum Zentralknoten -->
+  <g stroke="#FFD60A" stroke-width="1.8" opacity="0.75" fill="none">
+    <path d="M310 375 L400 290"/>
+    <path d="M490 375 L400 290"/>
+    <path d="M310 470 L310 375"/>
+    <path d="M490 470 L490 375"/>
+  </g>
+  <!-- Funkwellen -->
+  <g fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round">
+    <path d="M430 240 a42 42 0 0 0-60 0"/>
+    <path d="M446 218 a64 64 0 0 0-92 0"/>
+  </g>
+  <text x="220" y="570" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.45)" letter-spacing="3">KNX BUS · 29 V DC</text>
+</svg>

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Anker-Ziele nicht unter der Sticky-Navbar verstecken */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-white font-sans text-navy-950 antialiased;
+  }
+
+  ::selection {
+    @apply bg-volt text-navy-950;
+  }
+
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+/*
+ * Leiterbahn-Puls (Signature-Element):
+ * Ein gelbes Segment wandert entlang eines SVG-Pfads mit pathLength="100".
+ */
+.trace-pulse {
+  stroke-dasharray: 14 86;
+  animation: trace-flow 4s linear infinite;
+}
+
+.trace-pulse--slow {
+  animation-duration: 7s;
+  animation-delay: 1.4s;
+}
+
+@keyframes trace-flow {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .trace-pulse,
+  .trace-pulse--slow {
+    animation: none;
+    stroke-dasharray: none;
+  }
+}
